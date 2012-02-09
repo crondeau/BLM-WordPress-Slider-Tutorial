@@ -1,0 +1,77 @@
+/*
+Theme Name: Home page slider example
+Description: This theme is not a complete theme. It is only meant as an accompaniment to the tutorial located at 
+Version: 1.0
+Author: Christine Rondeau
+Author URI: http://www.bluelimemedia.com
+*/
+
+/* Main Layout
+-----------------------------------------------*/
+body {
+	margin: 0px; padding: 0px;
+	background:#FFF;
+}
+
+#container {
+	position:relative;
+	width: 700px;
+	margin: 0px auto 0px auto; padding:0;
+}
+
+/*----------------Slideshow --------------------*/
+
+#slides {
+	position:absolute;
+	top:0px;
+	left:0px;
+	z-index:100;
+}
+.slides_container {
+	width:700px;
+	overflow:hidden;
+	position:relative;
+	display:none;
+}
+.slides_container a {
+	width:700px;
+	height:480px;
+	display:block;
+}
+.slides_container a img {
+	display:block;
+}
+#slides .next,#slides .prev {
+	position:absolute;
+	top:220px;
+	left:-24px;
+	width:24px;
+	height:43px;
+	display:block;
+	z-index:101;
+}
+#slides .next {
+	left:700px;
+}
+.pagination {
+	margin:26px auto 0;
+	width:100px;
+}
+.pagination li {
+	float:left;
+	margin:0 1px;
+	list-style:none;
+}
+.pagination li a {
+	display:block;
+	width:12px;
+	height:0;
+	padding-top:12px;
+	background-image:url(images/pagination.png);
+	background-position:0 0;
+	float:left;
+	overflow:hidden;
+}
+.pagination li.current a {
+	background-position:0 -12px;
+}
